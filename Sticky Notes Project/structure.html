@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="notes">
+        <div id = "header">
+            <h1 class="h1">Sticky Notes</h1>
+        </div>
+        <div id = "container">
+            <input type="text" name="text" class="input" placeholder="Type your note here..." />
+            <button class="add-note" type="button">+</button>
+        </div>
+        <div class="notes-container"></div>
+        <template>
+            <div class="card">
+                <div class="tools">
+                    <div class="circle">
+                        <span class="red box"></span>
+                    </div>
+                    <div class="card_content"></div>
+                </div>
+            </div>
+        </template>
+    </div>
+</body>
+</html>
