@@ -1,0 +1,88 @@
+body{
+  display: flexbox;
+  justify-content: center;
+  background-color: lightyellow;
+  align-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.title {
+	color: black;
+  align-self: top;
+
+}
+#work-area{
+  width: 450px;
+  height: 330px;
+  margin: 0 auto;
+  padding: 25px;
+  padding-top: 20px;
+  border: 3px solid;
+  border-radius: 20px;
+  border-color: black;
+  background-color: yellow;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#amount{
+  width: 200px;
+  height: 20px;
+  margin: 0 auto;
+  padding: 5px;
+  padding-top: 5px;
+  border: 1px solid;
+  border-radius: 9px;
+  border-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#choosing-currencies{
+  padding-top: 10px;
+}
+#from-currency{
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 5px;
+  padding-top: 5px;
+  border: 1px solid;
+  border-radius: 9px;
+  border-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#to-currency{
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 5px;
+  padding-top: 5px;
+  border: 1px solid;
+  border-radius: 9px;
+  border-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#conversion{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#convertor{
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  font-size: medium;
+  padding: 5px;
+  padding-top: 5px;
+  border: 1px solid;
+  border-radius: 9px;
+  border-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: blue;
+  color: white;
+  transition: 250ms;
+}
+#convertor:hover{
+  background-color: rgb(5, 153, 246);
+  color: black;
+  transition: 250ms;
+}
+#to{
+  font-size: large;
+}
