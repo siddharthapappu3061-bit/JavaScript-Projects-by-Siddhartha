@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>To-Do List</h1>
+        </div>
+        <div class="content">
+            <input type="text" id="search-task" placeholder="Search tasks...">
+            <div id="error-message">
+                <span>Please fill in all fields</span>
+                <button id="close-error">x</button>
+            </div>
+            <div class="task-details-input">
+                <input type="text" id="task-name" placeholder="Add your task here">
+                <input type="date" id="enter-date">
+                <input type="time" id="enter-time">
+                <button id="add-a-task">Add Task</button>
+            </div>
+            <div class="tasks-container">
+                <h2>Due Tasks</h2>
+                <div id="due-tasks"></div>
+                <h2>Upcoming Tasks</h2>
+                <div id="upcoming-tasks"></div>
+            </div>
+        </div>
+    </div>
+    <div id="edit-dialog-box" class="dialog-box">
+        <div class="dialog-box-content">
+            <h2>Edit Task</h2>
+            <label for="edit-description">Task Description</label>
+            <input type="text" id="edit-description" placeholder="Edit your task">
+            <label for="edit-date">Due Date</label>
+            <input type="date" id="edit-date">
+            <label for="edit-time">Due Time</label>
+            <input type="time" id="edit-time">
+            <div class="dialog-box-buttons">
+                <button id="save-edit">Save Changes</button>
+                <button id="cancel-edit">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js" defer></script>
+</body>
+</html>

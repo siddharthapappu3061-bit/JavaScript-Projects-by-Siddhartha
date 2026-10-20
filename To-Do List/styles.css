@@ -1,0 +1,268 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f8fc;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #3f51b5;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 30px;
+}
+
+.content {
+    padding: 30px;
+}
+
+#search-task {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: white;
+}
+
+.task-details-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.task-details-input input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: white;
+    color: #333;
+}
+
+#task-name {
+    flex: 2;
+    min-width: 0;
+}
+
+#enter-date,
+#enter-time {
+    flex: 1;
+    min-width: 0;
+}
+
+#add-a-task {
+    padding: 12px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#add-a-task:hover {
+    background-color: #388e3c;
+}
+
+.tasks-container h2 {
+    color: #3f51b5;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.task-day {
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.task-day h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.task-description {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.task-time {
+    color: #0a0000;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.edit-task-btn,
+.delete-task-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.edit-task-btn {
+    background-color: #ffca28;
+    color: #333;
+}
+
+.edit-task-btn:hover {
+    background-color: #fbc02d;
+}
+
+.delete-task-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-task-btn:hover {
+    background-color: #d32f2f;
+}
+
+.empty-message {
+    background-color: #ffecb3;
+    color: #795548;
+    border: 1px solid #ffcc80;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#error-message {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+    padding: 12px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#close-error {
+    background: none;
+    border: none;
+    color: #c62828;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.dialog-box {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.dialog-box-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dialog-box-content h2 {
+    color: #3f51b5;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.dialog-box-content label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.dialog-box-content input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.dialog-box-content input:focus {
+    outline: none;
+    border-color: #3f51b5;
+}
+
+.dialog-box-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#save-edit {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#save-edit:hover {
+    background-color: #388e3c;
+}
+
+#cancel-edit {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cancel-edit:hover {
+    background-color: #d32f2f;
+}
